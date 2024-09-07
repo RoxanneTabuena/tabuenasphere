@@ -1,8 +1,9 @@
-// render an entry display based on the user selected entry
+import { useParams } from 'react-router-dom'
 export const Entry = () =>{
+    const { entry } = useParams()
     return (
         <div>
-            <p>Entry Page</p>
+            <p>{entry}</p>
         </div>
     )
 }

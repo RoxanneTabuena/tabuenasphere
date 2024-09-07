@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom"
 export const Showcase = () => {
+    // replace with a mapped projects array
+    const project = 'x'
     return (
         <div>
-            <NavLink to="/project">
-                <img src="logo-x" alt="logo for project x"/>
+            <NavLink to={`/showcase/${project}`}>
+                <img src={`logo-${project}`} alt={`logo for ${project}`}/>
                 <div className="project">
-                    <h5>Project Title</h5>
+                    <h5>{project}</h5>
                     <p>explanation</p>
                 </div>
             </NavLink>

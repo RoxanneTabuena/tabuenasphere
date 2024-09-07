@@ -1,12 +1,10 @@
 import { NavLink } from "react-router-dom"
-export const About = () => {
+export const Store = () => {
+    // replace ith items array
+    const item = 'x'
     return (
         <div>
-            <img src="me" alt="the dork that wrote this website"/>
-            <NavLink to="/bio">Bio</NavLink>
-            <NavLink to="/causes">Causes</NavLink>
-            <NavLink to="/interests">Interests</NavLink>
-            <NavLink to="/skills">Skills</NavLink>
+            <NavLink to={`/store/${item}`}>{item}</NavLink>
         </div>
     )
 }
