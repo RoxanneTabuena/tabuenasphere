@@ -1,10 +1,6 @@
-export const Goodies = () => {
+export const Email = () => {
     return (
-        <div className="goodies">
-            <p>select a treat</p>
-            <img src="human-goodie" alt="donut"/>
-            <img src="dog-goodie" alt="dog treat"/>
-            <img src="cat-goodie" alt="cat treat"/>
-        </div>
+        <form action="#" method="post">
+        </form>
     )
 }
