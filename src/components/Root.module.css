@@ -1,0 +1,17 @@
+
+.banner {
+    color: salmon;
+    margin: 1em;
+}
+
+footer>img {
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+}

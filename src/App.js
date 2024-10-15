@@ -2,20 +2,20 @@ import React from 'react';
 import './App.css';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import { Root } from "./components/Root";
-import { About } from "./components/About/About";
-import { Topic } from "./components/About/Topic";
-import { Collab } from './components/Collab';
-import { Rundown } from './components/Rundown';
-import { Book } from "./components/Book"
+import { About } from "./components/about/About";
+import { Topic } from "./components/about/Topic";
+import { Collab } from './components/work/Collab';
+import { Rundown } from './components/work/Rundown';
+import { Book } from "./components/work/Book"
 import { Email } from './components/Email';
-import { Goodies } from './components/Goodies';
-import { Hire } from './components/Hire';
-import { Showcase } from './components/Showcase';
-import { Project } from './components/Project';
-import { Store } from './components/Store';
-import { Item } from './components/Item';
-import { Vlog } from './components/Vlog';
-import { Entry } from './components/Entry';
+import { Goodies } from './components/goodies/Goodies';
+import { Hire } from './components/work/Hire';
+import { Showcase } from './components/showcase/Showcase';
+import { Project } from './components/showcase/Project';
+import { Store } from './components/store/Store';
+import { Item } from './components/store/Item';
+import { Vlog } from './components/vlog/Vlog';
+import { Entry } from './components/vlog/Entry';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Root/>}>

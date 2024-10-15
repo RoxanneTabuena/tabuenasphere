@@ -1,0 +1,13 @@
+.navItem > img { 
+    width:1rem;
+    padding-right: .5rem;
+}
+.navItem {
+    align-items: center;
+    display:flex;
+    font-family: 'subtitle';
+}
+
+a {
+    color: mediumspringgreen;
+}
