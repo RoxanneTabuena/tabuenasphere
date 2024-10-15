@@ -7,7 +7,7 @@ import showcase from '../assets/img/star_showcase.png'
 import vlog from '../assets/img/star_vlog.png'
 import classes from '../components/NavItem.module.css'
 
-export const NavItem = ( {category} ) => {
+export const NavItem = ( {cat} ) => {
     const imgs = {
         about : about,
         collab : collab,
@@ -19,8 +19,8 @@ export const NavItem = ( {category} ) => {
     
     return (
         <div className={`${classes.navItem}`}>
-            <img src={imgs[category]} alt="star icon" />
-            <NavLink to={category}>{category}</NavLink>
+            <img src={imgs[cat]} alt="star icon" />
+            <NavLink to={cat}>{cat}</NavLink>
         </div>
     )
 
