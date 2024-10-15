@@ -1,14 +1,16 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import classes from './Root.module.css'
 import me from '../assets/gifs/resting.gif'
 import { Nav } from '../components/Nav'
 
+
 export const Root = () => {
+
     return (
         <div>
             <header>
                 <div className={`${classes.banner} title`}>
-                    <h1>Roxanne Tabuena</h1>
+                    <NavLink to="/"><h1>Roxanne Tabuena</h1></NavLink>
                     <ul>
                         <li><h3>Front-End Developer</h3></li>
                         <li><h3>3D Creator</h3></li>
