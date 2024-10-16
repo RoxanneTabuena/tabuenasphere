@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import { Root } from "./components/Root";
+import { Home } from "./components/Home";
 import { About } from "./components/about/About";
 import { Topic } from "./components/about/Topic";
 import { Collab } from './components/work/Collab';
@@ -19,6 +20,7 @@ import { Entry } from './components/vlog/Entry';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Root/>}>
+    <Route path="home" element={<Home/>}/>
     <Route path="about" element={<About/>}/>
     <Route path="about/:topic" element={<Topic/>}/>
     <Route path="collab" element={<Collab/>}/>

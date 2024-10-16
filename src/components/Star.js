@@ -1,8 +1,10 @@
-import { useState } from "react"
 import classes from "./Star.module.css"
 import menu_pic from "../assets/img/menu.png"
 import menu_on from "../assets/gifs/menu_on.gif"
 import menu_off from "../assets/gifs/menu_off.gif"
+import collab_pic from "../assets/img/collab.png"
+import collab_on from "../assets/gifs/collab_on.gif"
+import collab_off from "../assets/gifs/collab_off.gif"
 
 const catDirectory = {
     menu: {
@@ -11,22 +13,20 @@ const catDirectory = {
         off : <img src={menu_off} className={`${classes.icon}`} alt="menu icon"/>
     },
     about: 'about_img',
-    collab: 'collab_img',
+    collab: {
+        pic : <img src={collab_pic} className={`${classes.full}`} alt="collab icon"/>,
+        on : <img src={collab_on} className={`${classes.full}`} alt="collab icon"/>,
+        off : <img src={collab_off} className={`${classes.full}`} alt="collab icon"/>
+    },
     hire: 'hire_img',
     shop: 'shop_img',
     showcase: 'showcase_img',
     vlog: 'vlog_img'
 }
 
-export const Star = ({cat}) => {
-    const [ img, setImg ] = useState('pic')
-    const handleOver = () => {
-        setImg('on')
-    }
-    const handleOut = () => {
-        setImg('off')
-    }
-    return (<div onMouseOver={handleOver} onMouseOut={handleOut}>
+export const Star = ({cat, img}) => {
+
+    return (<div>
                 {catDirectory[cat][img]}
             </div>)
 }

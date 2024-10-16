@@ -1,0 +1,34 @@
+.grid {
+    color: white;
+    display: grid;
+    grid-template: 
+        "about showcase"
+        "shop vlog"
+        "collab hire";
+    height: 100%;
+}
+
+
+.about {
+    grid-area: about;
+}
+
+.showcase {
+    grid-area: showcase;
+}
+
+.shop {
+    grid-area: shop;
+}
+
+.vlog {
+    grid-area: vlog;
+}
+
+.collab {
+    grid-area: collab;
+}
+
+.hire {
+    grid-area: hire;
+}

@@ -1,7 +1,11 @@
+.body {
+    max-width: 450px;
+    position: relative;
+}
 
 .banner {
     color: salmon;
-    margin: 1em;
+    /* margin: 1em; */
 }
 
 footer>img {
@@ -14,4 +18,17 @@ ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     justify-items: center;
+}
+
+header{
+    height: 15vh;
+}
+
+.portal {
+    height: 50vh;
+}
+
+footer{
+    padding: .5em;
+    height: 35vh;
 }

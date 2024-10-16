@@ -7,10 +7,10 @@ import { Nav } from '../components/Nav'
 export const Root = () => {
 
     return (
-        <div>
+        <div className={`${classes.body}`}>
             <header>
                 <div className={`${classes.banner} title`}>
-                    <NavLink to="/"><h1>Roxanne Tabuena</h1></NavLink>
+                    <NavLink to="/home"><h1>Roxanne Tabuena</h1></NavLink>
                     <ul>
                         <li><h3>Front-End Developer</h3></li>
                         <li><h3>3D Creator</h3></li>
@@ -21,7 +21,9 @@ export const Root = () => {
                     <Nav />
                 </nav>
             </header>
+            <div className={`${classes.portal}`}>
                 <Outlet/>
+            </div>
             <footer>
                 <img src={me} alt="developer working on a laptop"/>
                 <div className="links">
