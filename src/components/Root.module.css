@@ -25,10 +25,18 @@ header{
 }
 
 .portal {
-    height: 50vh;
+    height: 45vh;
 }
 
 footer{
     padding: .5em;
-    height: 35vh;
+    height: 40vh;
+}
+
+.boom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
 }
