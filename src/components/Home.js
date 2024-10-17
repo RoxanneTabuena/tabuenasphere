@@ -1,7 +1,7 @@
 import classes from './Home.module.css'
 import { useState } from "react"
 import { Star } from './Star'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Home = () => {
@@ -37,38 +37,28 @@ export const Home = () => {
                 <Star cat="about" img={aboutImg}/>
             </div>
             <div className={`${classes.collab}`} onMouseOver={()=> handleOver('collab')} onMouseOut={()=> handleOut('collab')} onPointerOver={()=>handleOver('collab')} onPointerOut={()=>handleOut('collab')}>
-                <NavLink to="/collab">
-                    <div className={`${classes.top}`}>
-                    </div>
-                </NavLink>
+                <div className={`${classes.top}`} onClick={()=> handleBoom('collab')}>
+                </div>
                 <Star cat="collab" img={collabImg}/>
             </div>
             <div className={`${classes.hire}`} onMouseOver={()=> handleOver('hire')} onMouseOut={()=> handleOut('hire')} onPointerOver={()=>handleOver('hire')} onPointerOut={()=>handleOut('hire')}>
-                <NavLink to="/hire">
-                    <div className={`${classes.top}`}>
-                    </div>
-                </NavLink>
+                <div className={`${classes.top}`} onClick={()=> handleBoom('hire')}>
+                </div>
                 <Star cat="hire" img={hireImg}/>
             </div>
             <div className={`${classes.shop}`} onMouseOver={()=> handleOver('shop')} onMouseOut={()=> handleOut('shop')} onPointerOver={()=>handleOver('shop')} onPointerOut={()=>handleOut('shop')}>
-                <NavLink to="/shop">
-                    <div className={`${classes.top}`}>
-                    </div>
-                </NavLink>
+                <div className={`${classes.top}`} onClick={()=> handleBoom('shop')}>
+                </div>
                 <Star cat="shop" img={shopImg}/>
             </div>
             <div className={`${classes.showcase}`} onMouseOver={()=> handleOver('showcase')} onMouseOut={()=> handleOut('showcase')} onPointerOver={()=>handleOver('showcase')} onPointerOut={()=>handleOut('showcase')}>
-                <NavLink to="/showcase">
-                    <div className={`${classes.top}`}>
-                    </div>
-                </NavLink>
+                <div className={`${classes.top}`} onClick={()=> handleBoom('showcase')}>
+                </div>
                 <Star cat="showcase" img={showcaseImg}/>
             </div>
             <div className={`${classes.vlog}`} onMouseOver={()=> handleOver('vlog')} onMouseOut={()=> handleOut('vlog')} onPointerOver={()=>handleOver('vlog')} onPointerOut={()=>handleOut('vlog')}>
-                <NavLink to="/vlog">
-                    <div className={`${classes.top}`}>
-                    </div>
-                </NavLink>
+                <div className={`${classes.top}`} onClick={()=> handleBoom('vlog')}>
+                </div>
                 <Star cat="vlog" img={vlogImg}/>
             </div>
         </div>
