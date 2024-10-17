@@ -13,7 +13,7 @@ import { Goodies } from './components/goodies/Goodies';
 import { Hire } from './components/work/Hire';
 import { Showcase } from './components/showcase/Showcase';
 import { Project } from './components/showcase/Project';
-import { Store } from './components/store/Store';
+import { Shop } from './components/store/Shop';
 import { Item } from './components/store/Item';
 import { Vlog } from './components/vlog/Vlog';
 import { Entry } from './components/vlog/Entry';
@@ -32,8 +32,8 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="hire/:rundown" element={<Rundown/>}/>
     <Route path="showcase" element={<Showcase/>}/>
     <Route path="showcase/:project" element={<Project/>}/>
-    <Route path="store" element={<Store/>}/>
-    <Route path="store/:item" element={<Item/>}/>
+    <Route path="shop" element={<Shop/>}/>
+    <Route path="shop/:item" element={<Item/>}/>
     <Route path="vlog" element={<Vlog/>}/>
     <Route path="vlog/:entry" element={<Entry/>}/>
   </Route>

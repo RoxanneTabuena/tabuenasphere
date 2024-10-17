@@ -1,0 +1,42 @@
+.mini, .tags, .proj {
+    display: flex;
+    width: fit-content;
+}
+.mini {
+    margin: auto;
+}
+
+.mini>div {
+    text-align: left;
+}
+.tags {
+    flex-wrap: wrap;
+}
+.tag {
+    font-size: x-small;
+    color:black;
+    border-radius: .75rem;
+    margin: 3px;
+    width: fit-content;
+}
+h3.turquoise, h2.turquoise{
+    color:turquoise
+}
+.tag.turquoise {
+    background-color: paleturquoise;
+    border: 3px solid paleturquoise;
+}
+
+.icon {
+    width: 3rem;
+}
+.demo {
+    width: 70%
+}
+
+.col1 {
+    flex: 3;
+}
+.col2 {
+    flex: 2;
+}

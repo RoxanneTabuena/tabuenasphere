@@ -21,11 +21,12 @@ ul {
 }
 
 header{
-    height: 15vh;
+    height: 12vh;
 }
 
 .portal {
-    height: 45vh;
+    height: 48vh;
+    text-align: center;
 }
 
 footer{
