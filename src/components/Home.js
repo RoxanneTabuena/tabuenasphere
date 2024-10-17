@@ -1,7 +1,7 @@
 import classes from './Home.module.css'
 import { useState } from "react"
 import { Star } from './Star'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 
 export const Home = () => {
@@ -11,6 +11,7 @@ export const Home = () => {
     const [ shopImg, setShopImg ] = useState('pic')
     const [ showcaseImg, setShowcaseImg ] = useState('pic')
     const [ vlogImg, setVlogImg ] = useState('pic')
+    const navigate = useNavigate()
     const handleDirectory = {
         about : setAboutImg,
         collab : setCollabImg,
@@ -25,13 +26,14 @@ export const Home = () => {
     const handleOut = (cat) => {
         handleDirectory[cat]('off')
     }
+    const handleBoom = (cat) => {
+        navigate(`/${cat}`, {state: {from: 'home'}})
+    }
     return (
         <div className={`${classes.grid}`}>
             <div className={`${classes.about}`} onMouseOver={()=> handleOver('about')} onMouseOut={()=> handleOut('about')} onPointerOver={()=>handleOver('about')} onPointerOut={()=>handleOut('about')}>
-                <NavLink to="/about">
-                    <div className={`${classes.top}`}>
-                    </div>
-                </NavLink>
+                <div className={`${classes.top}`} onClick={()=> handleBoom('about')}>
+                </div>
                 <Star cat="about" img={aboutImg}/>
             </div>
             <div className={`${classes.collab}`} onMouseOver={()=> handleOver('collab')} onMouseOut={()=> handleOut('collab')} onPointerOver={()=>handleOver('collab')} onPointerOut={()=>handleOut('collab')}>

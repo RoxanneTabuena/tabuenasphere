@@ -20,7 +20,7 @@ export const NavItem = ( {cat} ) => {
     return (
         <div className={`${classes.navItem}`}>
             <img src={imgs[cat]} alt="star icon" />
-            <NavLink to={cat}>{cat}</NavLink>
+            <NavLink to={cat} state={{ from:"mini" }}>{cat}</NavLink>
         </div>
     )
 
